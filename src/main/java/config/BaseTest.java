@@ -7,32 +7,50 @@ public class BaseTest {
     BaseTest(){}
 
     @BeforeSuite
-    public void beforeSuite(){}
+    public void beforeSuite(){
+        System.out.println("Before Suite");
+    }
 
     @BeforeGroups
-    public void beforeGroup(){}
+    public void beforeGroup(){
+        System.out.println("Before Group");
+    }
 
     @BeforeTest
-    public void beforeTest(){}
+    public void beforeTest(){
+        System.out.println("Before Test");
+    }
 
     @BeforeClass
-    public void beforeClass(){}
+    public void beforeClass(){
+        System.out.println("Before Class");
+    }
 
     @BeforeMethod
-    public void beforeMethod(){}
+    public void beforeMethod(){
+        System.out.println("Before Method");
+    }
 
 
     @AfterMethod
-    public void afterMethod(){}
+    public void afterMethod(){
+        System.out.println("After Method");
+    }
 
     @AfterClass
-    public void afterClass(){}
+    public void afterClass(){
+        System.out.println("After Class");
+    }
 
     @AfterTest
-    public void afterTest(){}
+    public void afterTest(){
+        System.out.println("After Test");
+    }
 
-    @AfterMethod
-    public void afterGroup(){}
+    @AfterGroups
+    public void afterGroup(){
+        System.out.println("After Group");
+    }
 
     @AfterSuite
     public void afterSuite(){}
